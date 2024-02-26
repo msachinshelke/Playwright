@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "assets/*": ["assets/*"],
+      "test/*": ["test/*"]
+    },
+    "rootDirs": ["src/", "test/"]
+  },
+  "include": [
+    "src",
+    "cucumber.js",
+    "cucumber.report.js",
+    "cucumber.node.js",
+    "webpack.common.js",
+    "webpack.dev.js",
+    "webpack.prod.js",
+    "jest.config.js"
+  ],
+  "exclude": ["node_modules"],
+  "types": ["axe-playwright"]
+}
